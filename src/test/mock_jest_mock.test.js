@@ -1,7 +1,7 @@
-import * as app from "../src/app";
-import * as math from "../src/math";
+import * as app from "../app";
+import * as math from "../math";
 // Set all module functions to jest.fn
-jest.mock("./math.js");
+jest.mock("../math");
 test("calls math.add", () => {
   app.doAdd(1, 2);
   expect(math.add).toHaveBeenCalledWith(1, 2);

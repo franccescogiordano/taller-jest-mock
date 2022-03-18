@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Users from '../src/users';
+import Users from '../users';
 jest.mock('axios');
 test('should fetch users', () => {
   const users = [{name: 'Bob'}];
